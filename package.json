@@ -1,0 +1,23 @@
+{
+  "scripts": {
+    "install-all": "npm install && cd client && npm install && cd ../server && npm install",
+    "setup-test-db": "echo 'Using MongoMemoryServer for tests; no manual setup needed.'",
+    "test": "npx jest --coverage",
+    "test:unit": "npx jest --testPathPattern=unit",
+    "test:integration": "npx jest --testPathPattern=integration",
+    "test:e2e": "cypress run"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.28.5",
+    "@babel/preset-react": "^7.28.5",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.0",
+    "babel-jest": "^30.2.0",
+    "cypress": "latest",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^29.7.0",
+    "jest-circus": "^30.2.0",
+    "mongodb-memory-server": "^10.3.0",
+    "supertest": "^7.1.4"
+  }
+}
